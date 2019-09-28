@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CVenLigne</title>
+
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.css" />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="~/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="~/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+<body>
+
+    <div class="container body-content">
+
+        <!-- Vertical navbar -->
+        <div class="vertical-nav bg-white" id="sidebar">
+            <div class="py-4 px-3 mb-4 bg-light">
+                <div class="media d-flex align-items-center">
+                    <img src="~/images/Profil.jpg" alt="Ma photo de profil" width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+                    <div class="media-body">
+                        <h4 class="m-0">Caudron Cédric</h4>
+                        <p class="font-weight-light text-muted mb-0">En recherche de stage développeur Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Menu</p>
+
+            <ul class="nav flex-column bg-white mb-0">
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-italic @ViewData["activeHome"]" asp-controller="Home" asp-action="Index">
+
+                        Présentation
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-italic @ViewData["activeCompetences"]" asp-controller="Competences" asp-action="Index">
+
+                        Mes compétences
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-italic @ViewData["activeEtudes"]" asp-controller="Etudes" asp-action="Index">
+
+                        Mes études
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-italic @ViewData["activeParcours"]" asp-controller="Parcours" asp-action="Index">
+
+                        Mon parcours professionnel
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-italic @ViewData["activeRealisations"]" asp-controller="Realisations" asp-action="Index">
+
+                        Mes Réalisations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-italic @ViewData["activeContact"]" asp-controller="Contact" asp-action="Index">
+
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        @RenderBody()
+
+        <hr />
+
+        <footer>
+
+            <p>&copy; 2019 - Cédric Caudron - Mon CV en ligne</p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery-3.4.1.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js"></script>
+
+
+</body>
+</html>

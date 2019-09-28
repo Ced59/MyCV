@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Présentation";
+}
+
+
+<div class="page-content p-5" id="content">
+
+    <!-- Bouton pour cacher le menu -->
+    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><small class="text-uppercase font-weight-bold">Menu</small></button>
+
+ 
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img src="~/images/ProfilModifCV.jpg" alt="Ma photo de profil" width="150" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        </div>
+
+        <div class="col-md-8 col-sm-12">
+            <h2 class="text-white">Cédric Caudron</h2>
+
+            <p class="lead text-white mb-0">Recruteuses, recruteurs,</p>
+            <p class="lead text-white">Bonjour et bienvenue sur ma page personnelle réalisée en ASP.NET Core.</p>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="row text-white">
+        <div class="col-lg-12">
+            <p class="lead">
+                Actuellement en reconversion professionnelle pour devenir développeur Web, je suis à la recherche d'un <b>stage en entreprise de 12 semaines</b>.
+            </p>
+            <p class="lead">
+                En formation "Développeur Web - WebMobile" à <a href="http://www.valarep.fr" target="_blank">Valarep</a> Valenciennes jusque fin juin 2020, j'acquiers de nombreuses compétences dans les différentes technologies Web.
+            </p>
+
+            <p class="lead">
+                Cette formation, certifiante, aboutit sur un Titre Professionnel de niveau 3 (Bac +2) inscrit au RNCP. Le résumé du référentiel de la certification se trouvant <a href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=31114" target="_blank">ici</a>.
+            </p>
+            <div class="bg-white p-5 rounded my-5 shadow-sm">
+                <p class="lead font-italic mb-2 text-muted">
+                    Le stage, découpé en trois périodes de quatre semaines, est réparti selon les dates suivantes :
+                </p>
+                <ul class="lead font-italic mb-0 text-muted">
+                    <li>Du 25 Novembre 2019 au 20 Décembre 2019</li>
+                    <li>Du 17 Février 2020 au 13 Mars 2020</li>
+                    <li>Du 11 Mai 2020 au 12 Juin 2020</li>
+                </ul>
+            </div>
+            <p class="lead">
+                Doté d'un bon esprit logique, d'une grande détermination, d'une énorme passion pour les nouvelles technologies, et étant d'un naturel facile à vivre, je serais honoré de vous rejoindre durant ces 12 semaines dans votre entreprise.
+            </p>
+            <p class="lead">
+                Pour tout contact ou demande supplémentaire, n'hésitez pas à visiter ma page <a asp-controller="Contact" asp-action="Index">Contact</a>.
+            </p>
+        </div>
+
+    </div>
+
+</div>
