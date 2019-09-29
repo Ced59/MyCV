@@ -6,6 +6,19 @@ $(function () {
     });
 });
 
+$(function () {
+    // Masquer et démasquer le contenu competences
+    $('#contentCompetencesCollapse').on('click', function () {
+        $('#contentCompetences').slideToggle(1000);
+    });
+});
+
+$(function () {
+    // Masquer et démasquer le contenu competences
+    $('#contentInProgressCollapse').on('click', function () {
+        $('#contentCompetencesInProgess').slideToggle(1000);
+    });
+});
 
 $(function () {
     //Calcul de l'age

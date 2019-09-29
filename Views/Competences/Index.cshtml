@@ -1,11 +1,187 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Mes compétences";
 }
 
-<div class="page-content p-5" id="content">
+    <div class="page-content p-5" id="content">
 
-    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><small class="text-uppercase font-weight-bold">Menu</small></button>
+        <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><small class="text-uppercase font-weight-bold">Menu</small></button>
 
-</div>
 
+
+        <header class="row">
+            <h2 class="col-12 text-white mb-0">Mes compétences</h2>
+        </header>
+
+        <div class="separator"></div>
+
+        <section class="row">
+
+            <h4 class="col-md-6 col-sm-12 text-white mt-0">Les compétences acquises :</h4>
+            <button id="contentCompetencesCollapse" type="button" class="col-md-6 col-sm-10 btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 mt-sm-1"><small class="text-uppercase font-weight-bold">Afficher / Masquer</small></button>
+
+            <ul class="list-unstyled" id="contentCompetences">
+
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/html5.png" alt="html5" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">HTML 5</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                Bonne maitrise de l'HTML 5 et des différentes balises le composant. <br />
+                                Cette page personnelle utilise d'ailleurs les capacités de ce langage de description de page Web.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/css3.png" alt="css3" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">CSS 3</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                Bonne maitrise du CSS 3. <br />
+                                Mise en page avec la flexbox ou les médias queries pour le responsive. Cette page personnelle utilise plusieurs fonctionnalités CSS natives.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/bootstrap-stack.png" alt="Bootstrap" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">Bootstrap 3 &amp; 4</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                Bonne maitrise du Framework CSS Bootstrap 3. <br />
+                                Je suis récemment passé sur Bootstrap 4, cette page personnelle l'utilise afin de me familiariser avec les différences entre les deux versions.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/cSharpLogo.jpg" alt="CSharp" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">Langage C #</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                Bonne connaissance du langage C#. <br />
+                                La syntaxe, l'utilisation du paradigme de la POO. Mon but à terme sera d'obtenir la certification Microsoft Certified Professionnal Developper en environnement .NET.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/aspnetcore.png" alt="AspNet" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">ASP.NET Core 2</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                Dans le sillage du langage C#, j'ai une connaissance raisonnable du Framework ASP.NET Core 2 avec le pattern MVC. <br />
+                                Je suis capable de créer un site Web dynamique utilisant cette technologie. <br />
+                                Cette page personnelle utilise d'ailleurs ce Framework, mais, par choix, de façon statique.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/sqlserverlogo.png" alt="SqlServer" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">SQL Server</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                Utilisation du SGBDR SQLServer. <br />
+                                Utilisation pour la persistance des données de mes applications Web ASP.NET. <br />
+                                En développement, avec Visual Studio, je l'utilise soit directement avec les fichiers de base de données, soit via des serveurs virtuels instanciés avec PowerShell.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="row">
+
+            <h4 class="col-md-6 col-sm-12 text-white mt-0">Les compétences en cours d'acquisition :</h4>
+            <button id="contentInProgressCollapse" type="button" class="col-md-6 col-sm-10 btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 mt-sm-1"><small class="text-uppercase font-weight-bold">Afficher / Masquer</small></button>
+
+            <ul class="list-unstyled" id="contentCompetencesInProgess">
+
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/Java-logo.png" alt="Java" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">Langage JAVA</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                Au programme de la formation, je monte en compétences dans l'environnement JAVA. <br />
+                                Utilisation des projets Maven, de la librairie libgdx. <br />
+                                Je m'imprègne des différences syntaxiques et des pratiques de développement entre le JAVA et le C#.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/Javascript-logo.jpg" alt="JavaScript" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">Langage JavaScript</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                Durant la formation, nous voyons l'utilisation du JavaScript pour manipuler le HTML. <br />
+                                Manipulation du DOM pour dynamiser les pages HTML.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="border-radius">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/images/Competences/Jquery_logo.jpg" alt="JQuery" width="150" class="mr-3 img-thumbnail shadow-sm">
+                        </div>
+
+                        <div class="col-8">
+                            <h5 class="text-white">Framework JQuery</h5>
+                            <div class="separator m-0"></div>
+                            <p class="lead text-white mb-0 text-justify">
+                                En parallèle du JavaScript, nous étudions également son framework JQuery. <br />
+                                Je l'utilise par ailleurs un peu dans cette page pour afficher/masquer le menu et les différentes sections, ainsi que pour calculer mon âge sur la page d'accueil.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </div>
