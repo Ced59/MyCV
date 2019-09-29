@@ -14,9 +14,16 @@ $(function () {
 });
 
 $(function () {
-    // Masquer et démasquer le contenu competences
+    // Masquer et démasquer le contenu competences en cours
     $('#contentInProgressCollapse').on('click', function () {
         $('#contentCompetencesInProgess').slideToggle(1000);
+    });
+});
+
+$(function () {
+    // Masquer et démasquer le contenu competences futures
+    $('#contentFutureCollapse').on('click', function () {
+        $('#contentCompetencesFuture').slideToggle(1000);
     });
 });
 
